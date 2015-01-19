@@ -2,7 +2,7 @@
 
 language: node_js
 
-#build_image: shippable/minv2:beta
+build_image: shippable/minv2:beta
 
 archive: true
 
