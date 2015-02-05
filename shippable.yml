@@ -2,7 +2,7 @@
 
 language: node_js
 
-build_image: shippable/minv2:beta
+#build_image: shippable/minv2:beta
 
 archive: true
 
@@ -17,7 +17,9 @@ services:
 
 # The path for Xunit to output test reports
 env:
+ global:
   - XUNIT_FILE=shippable/testresults/result.xml
+  - test=var
 
 # Create directories for test and coverage reports
 before_script:
@@ -26,6 +28,7 @@ before_script:
 
 # Running the tests with grunt
 script:
+  - echo $test
   - grunt
 
 
