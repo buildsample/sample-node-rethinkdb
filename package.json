@@ -1,7 +1,7 @@
 {
   "name": "sample-node-rethinkdb",
   "version": "0.0.0",
-  "description": "Testing RethinkDB service",
+  "description": "Testing RethinkDB service sample",
   "main": "index.js",
   "scripts": {
     "test": "grunt"
