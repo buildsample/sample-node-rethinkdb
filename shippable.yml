@@ -41,3 +41,4 @@ branches:
  only: 
    - master
    - test-prod
+   - test-pr/01
