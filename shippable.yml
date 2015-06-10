@@ -20,6 +20,7 @@ env:
  global:
   - XUNIT_FILE=shippable/testresults/result.xml
   - test=var
+  - secure: LE3XAnH5DlkL/Jz3dzOsZPHVMy7nIOw6D8TQT+mJZzz2UwwsmrNde6JcjT4aObqlXvnWRLh8h8tTPqNGTrLA/J5bIKPjv6TzecwM42xI1nBraXuVp0r7838mCD1ENoTIxOfceGN4B81gZlMliJY5RxS+Ss7+pPr+O2ymyrDXvuQKvswZ5fRCVsdNTJK9DFLeKhMCTXLdKK1lDZROdfVBeSkOBtsyLRvQVUsP8JOuuYATKe947lsJi027kwMq3Xux3moQQNrBjedO/OfN4aQVC7GuYxjL9cu6Ur2uWeTHbZhk9a+pyTOo2EMDqz4BoFEgWBp+sTUI16MhHXYTdRyDdA==
 
 # Create directories for test and coverage reports
 before_script:
@@ -28,7 +29,7 @@ before_script:
 
 # Running the tests with grunt
 script:
-  - echo $test
+  - echo $test and $key1
   - grunt
 
 
