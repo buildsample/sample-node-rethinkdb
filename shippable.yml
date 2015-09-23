@@ -32,7 +32,6 @@ script:
   - echo $test and $key1
   - grunt
 
-
 # Tell istanbul to generate a coverage report
 after_script:
   - ./node_modules/.bin/istanbul cover grunt -- -u tdd
