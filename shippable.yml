@@ -3,7 +3,7 @@
 language: node_js
 
 #build_image: shippable/minv2:beta
-
+build_image: drydock/u12nodall:tip
 archive: true
 
 # Version number
@@ -36,9 +36,3 @@ script:
 after_script:
   - ./node_modules/.bin/istanbul cover grunt -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
-
-branches:
- only: 
-   - master
-   - test-prod
-   - test-pr/01
